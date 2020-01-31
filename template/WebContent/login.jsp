@@ -5,18 +5,27 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel = "stylesheet" type="text/css" href="./css/style.css">
-		<title>Home画面</title>
+		<title>Login画面</title>
 	</head>
 	<body>
 		<div id ="header"></div>
 		<div id ="main">
 			<div id ="top">
-				<p>Home</p>
+				<p>Login</p>
 			</div>
 			<div>
-				<s:form action="HomeAction">
-					<s:submit value="商品購入"/>
+				<h3>商品を購入する際にはログインをお願いします。</h3>
+				<s:form action="LoginAction">
+					<s:textfield name="loginUserId"/>
+					<s:password name="loginPassword"/>
+					<s:submit value="ログイン"/>
 				</s:form>
+				<br>
+				<div>
+					<span>
+					  新規ユーザー登録は<a href='<s:url action="UserCreateAction"/>'>こちら</a>
+					</span>
+				</div>
 			</div>
 		</div>
 		<div id ="footer"></div>
