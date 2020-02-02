@@ -26,6 +26,8 @@ public class BuyItemDAO {
 				buyItemDTO.setItemName(rs.getString("item_name"));
 				buyItemDTO.setItemPrice(rs.getString("item_price"));
 			}
+			//DBの値が格納されているか確認。
+			System.out.println(buyItemDTO.getItemName());
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}

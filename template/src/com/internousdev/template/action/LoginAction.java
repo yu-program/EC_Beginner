@@ -41,8 +41,7 @@ public class LoginAction extends ActionSupport implements SessionAware{
 			session.put("item_name",buyItemDTO.getItemName());
 			session.put("item_price",buyItemDTO.getItemPrice());
 
-
-//			return result;
+			return result;
 		}
 		return result;
 
