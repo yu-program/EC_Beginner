@@ -9,8 +9,8 @@
 <!-- 対象のpackage名 -->
   <package name="com.internousdev.template.action" extends= "struts-default">
 <!-- <action>で指定したいActionファイル/JSPファイルを作成したら順次記述していく -->
-<!--     <action name="HomeAction" class="com.internousdev.template.action.HomeAction" method="execute"> -->
-<!--       <result name="success">login.jsp</result> -->
-<!--     </action> -->
+    <action name="HomeAction" class="com.internousdev.template.action.HomeAction" method="execute">
+      <result name="success">login.jsp</result>
+    </action>
   </package>
 </struts>
