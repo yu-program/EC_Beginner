@@ -14,7 +14,7 @@ public class UserCreateCompleteDAO {
 		DBConnector db = new DBConnector();
 		Connection con = db.getConnection();
 
-		String sql = "INSERT INTO login_user_transaction(login_Id,login_pass,user_name,insert_date)values(?,?,?,?)";
+		String sql = "INSERT INTO login_user_transaction(login_Id,login_pass,user_name,insert_date)VALUES(?,?,?,?)";
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1,loginUseId);
