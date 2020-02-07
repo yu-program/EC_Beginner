@@ -64,6 +64,7 @@ public class MyPageDAO {
 				e.printStackTrace();
 			}
 		}
+		System.out.println("MyPageDAOのresultは" + result);
 		return result;
 	}
 }

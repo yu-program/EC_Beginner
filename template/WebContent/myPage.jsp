@@ -14,7 +14,7 @@
 				<p>MyPage</p>
 			</div>
 			<div>
-<!-- sessionの変数名、Actionクラスとあってるか確認。
+<!-- sessionの変数名、Actionクラスでsetしたものとあってるか確認。
 			値が取得できてjspで表示されないのは値の変数名か条件式の変数名が間違えていることが多い -->
 			<!-- messagが空文字なら -->
 			<s:if test="session.message == ''">
@@ -49,7 +49,7 @@
 					<s:submit value="削除"/>
 				</s:form>
 			</s:if>
-			<s:if test="session.message! =null">
+			<s:if test="session.message !=null">
 				<h3><s:property value="session.message"/></h3>
 			</s:if>
 				<div>
